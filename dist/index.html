@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Independence from Obscurity</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style>
+    html,
+    body,
+    h2,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    body {
+        background: linear-gradient(#f3ede6, #e9e7e3);
+    }
+
+    .w3-main {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    #fingerprint-error {
+        color: brown;
+    }
+
+    #fingerprint-code,
+    #fingerprint-data {
+        word-wrap: none;
+    }
+
+    #bib {
+        padding: 5%;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Source</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main -->
+
+    <div class="w3-main">
+        <h1 class="w3-text-dark-grey">Independence from Obscurity</h1>
+
+        <div class="w3-panel w3-leftbar">
+            <span style="font-size: 50px; line-height: 0.6em; opacity: 0.2">❝</span>
+            <blockquote>
+                “The right of the people to be secure in their persons, houses,
+                papers, and effects, against unreasonable searches and seizures, shall
+                not be violated, and no Warrants shall issue, but upon probable cause,
+                supported by Oath or affirmation, and particularly describing the
+                place to be searched, and the persons or things to be seized.”
+                <br />
+                <br />
+                <i>Amendment IV, The U.S. Bill of Rights</i>
+            </blockquote>
+        </div>
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h2 class="w3-text-teal">Rule by Obscurity</h2>
+                <p>
+                    Our freedoms are dying a death by a thousand cuts. Imagine a not too distant future, that to the more paranoid minded may be a past instead. Your alarm wakes you early on Saturday morning because your office's productivity AI decides they need the extra help. It chose you because based on sentiment analysis of your actions and communications this week, you are the most likely of your co-workers to be agreeable and productive. On your way to work, your phone routes you through a detour to avoid congesting a street that is going to be used by a VIP later. At the end of the day, you recieve a notification with your extra pay today. It is exactly the amount of underpay you will settle for based on previous interactions.
+
+                    Each day, millions of Americans' data is stolen, and they don't even know it.
+
+                </p>
+                <i style="opacity: 0.6">Note: Confidence for the fingerprint will be capped at 0.7, because
+                    the "Pro" version of FingerprintJS isn't being used.</i>
+            </div>
+
+            <div class="w3-third w3-container">
+                <div class="tab w3-bar">
+                    <button class="w3-btn w3-text-teal" onclick="openTab(event, 0)">
+                        Your fingerprint
+                    </button>
+                    <button class="w3-btn w3-text-teal" onclick="openTab(event, 1)">
+                        Data used
+                    </button>
+                    <button class="w3-btn w3-text-teal" onclick="openTab(event, 2)">
+                        Source code
+                    </button>
+                </div>
+                <div id="fingerprint-hash"></div>
+                <div id="fingerprint-data"></div>
+                <div class="w3-code jsHigh" id="fingerprint-code" style="display:none">
+                    const fpPromise = import("https://openfpcdn.io/fingerprintjs/v3")
+                    .then((FingerprintJS) => FingerprintJS.load());
+                </div>
+                <div id="fingerprint-error">Failed to load fingerprint, try disabling your adblocker and
+                    refreshing.</div>
+                <!-- <textarea rows="10"></textarea> -->
+            </div>
+        </div>
+
+        <div class='tableauPlaceholder' id='viz1643783570271'><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='IdentityTheftReports&#47;TheftTypesOverTime' />
+                <param name='tabs' value='yes' />
+                <param name='toolbar' value='yes' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h2 class="w3-text-teal">Weaponized Data Collection</h2>
+                <p>
+                    Data collection has been used as a weapon long before the internet,
+                    but has grown to a much larger scale because of it. It now exists on such a scale that an unknown number of entities know things about you that you may not know yourself. For example, by correlating data sets like location data with time data like office hours, you can build a profile on people's habits and responses to stimuli.
+                </p>
+            </div>
+        </div>
+
+        <div id="chart"></div>
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h2 class="w3-text-teal">Divided and Conquered</h2>
+                <p>
+                    Much of our society's culture is now online. One of the most
+                    beautiful things about the internet is that no matter who or where
+                    you are, you can find a group of similar and like-minded people.
+                    This is also a major weakness, because it enables hyper targeting.
+                </p>
+            </div>
+        </div>
+
+        <!-- END MAIN -->
+    </div>
+
+    <footer id="citations">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+            <h4>Sources</h4>
+            <p id="bib">
+                Kelly, H. (2018, August 21). Google’s data collection is hard to escape, study claims. CNNMoney. https://money.cnn.com/2018/08/21/technology/google-data-collection/index.html
+                Thompson, S. A., & Warzel, C. (2020, January 26). Opinion | Twelve Million Phones, One Dataset, Zero Privacy. The New York Times. https://www.nytimes.com/interactive/2019/12/19/opinion/location-tracking-cell-phone.html
+                Consumer Sentinel Network Data Book 2020. (2021, August 24). Federal Trade Commission. https://www.ftc.gov/reports/consumer-sentinel-network-data-book-2020
+            </p>
+        </div>
+        <div class="w3-container w3-theme-l3">
+            <p>
+                Powered by
+                <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/json-viewer@2.2.0/lib/index.min.js"></script>
+    <script src="fingerprint.js"></script>
+    <script src="index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+    <!-- <script src="charts.js"></script> -->
+    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+    <script>
+        w3CodeColor();
+    </script>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1643783570271'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1100px'; vizElement.style.height = '900px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</body>
+
+</html>
